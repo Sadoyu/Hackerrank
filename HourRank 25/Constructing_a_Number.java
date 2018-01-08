@@ -1,13 +1,6 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
+import java.util.Scanner;
 public class Solution {
-
     static String canConstruct(int[] a) {
-        // Return "Yes" or "No" denoting whether you can construct the required number.
         int sum=0;
         for(int i=0;i<a.length;i++){
             int q;
@@ -21,7 +14,6 @@ public class Solution {
             return "Yes";
         return "No";
     }
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int t = in.nextInt();
@@ -34,6 +26,5 @@ public class Solution {
             String result = canConstruct(a);
             System.out.println(result);
         }
-        in.close();
     }
 }
