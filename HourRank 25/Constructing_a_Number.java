@@ -1,6 +1,6 @@
 import java.util.Scanner;
-public class Solution {
-    static String canConstruct(int[] a) {
+public class Solution{
+    static String canConstruct(int[] a){
         int sum=0;
         for(int i=0;i<a.length;i++){
             int q;
@@ -14,7 +14,7 @@ public class Solution {
             return "Yes";
         return "No";
     }
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         int t = in.nextInt();
         for(int a0 = 0; a0 < t; a0++){
